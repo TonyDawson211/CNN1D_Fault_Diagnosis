@@ -12,13 +12,12 @@ dist/
 .DS_Store
 Thumbs.db
 
-# 你的数据/模型目录：忽略内容，保留占位
-Signal_Data/*
+# 忽略 Signal_Data/ 里的全部内容，但放行每层目录里的 .gitkeep
+Signal_Data/**
 !Signal_Data/.gitkeep
+!Signal_Data/**/.gitkeep
 
-Training_Data/*
+# 忽略 Training_Data/ 里的全部内容，但放行每层目录里的 .gitkeep
+Training_Data/**
 !Training_Data/.gitkeep
-Training_Data/Model_Data/*
-!Training_Data/Model_Data/.gitkeep
-Training_Data/Pre_Training_Data/*
-!Training_Data/Pre_Training_Data/.gitkeep
+!Training_Data/**/.gitkeep
