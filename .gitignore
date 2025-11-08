@@ -12,12 +12,16 @@ dist/
 .DS_Store
 Thumbs.db
 
-# 忽略 Signal_Data/ 里的全部内容，但放行每层目录里的 .gitkeep
-Signal_Data/**
-!Signal_Data/.gitkeep
-!Signal_Data/**/.gitkeep
+# --- Training_Data：同理 ---
 
-# 忽略 Training_Data/ 里的全部内容，但放行每层目录里的 .gitkeep
 Training_Data/**
-!Training_Data/.gitkeep
+!Training_Data/
+!Training_Data/**/
 !Training_Data/**/.gitkeep
+
+# --- Signal_Data：忽略所有内容，但保留目录结构里的 .gitkeep ---
+
+Signal_Data/**
+!Signal_Data/           # 先放行顶层目录
+!Signal_Data/**/        # 再放行子目录（允许继续向下匹配）
+!Signal_Data/**/.gitkeep  # 只跟踪各层目录里的 .gitkeep
