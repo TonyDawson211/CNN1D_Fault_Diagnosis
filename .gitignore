@@ -1,0 +1,24 @@
+# 基础
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+build/
+dist/
+*.egg-info/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# 你的数据/模型目录：忽略内容，保留占位
+Signal_Data/*
+!Signal_Data/.gitkeep
+
+Training_Data/*
+!Training_Data/.gitkeep
+Training_Data/Model_Data/*
+!Training_Data/Model_Data/.gitkeep
+Training_Data/Pre_Training_Data/*
+!Training_Data/Pre_Training_Data/.gitkeep

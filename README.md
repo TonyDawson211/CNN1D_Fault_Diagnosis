@@ -1,0 +1,31 @@
+# CNN Bearing Fault Diagnosis
+
+一维 CNN 复现滚动轴承故障诊断（基于原论文思路 + 自制数据处理流程）
+
+## 环境
+- Python 3.13.9
+- 依赖：`pip install -r requirements.txt`
+
+## 数据
+- 大体量数据不随仓库提供。请把数据放到 `ROOT/Signal_Data/`下，请将数据对应标签放置好，一类故障的数据放在指定文件夹
+- 结构自定；代码默认使用相对路径，详见 `ROOT/src/config`
+
+## 代码介绍
+- Signal_Data放入故障数据，里面有四种故障分类
+- Training_Data存储了训练-验证-测试过程中的所有数据
+  - 此目录下直接放置训练-验证-测试数据集
+  - Model_Data下放置了训练过程中验证准确率最高的一次迭代的参数配置
+  - Pre_Training_Data下放置了训练前预处理的数据
+- src是核心代码区
+  - 此目录下直接放置了操作的核心代码
+    - Prerequisite_CNN 数据预处理
+    - CNN_Training_Data_load 数据转化为训练可用数据
+    - CNN_Model_Device 神经网络框架和设备搭建
+    - CNN_Trainning 训练框架搭建
+    - CNN_Test 测试框架搭建
+    - main 总运行接口
+  - config 存储的运行的路径配置
+  - src_jupyter 核心代码的jupyter版本，用于调试
+
+## 开始
+- 先运行 Prerequisite_CNN作数据预处理，再运行 main 总接口
