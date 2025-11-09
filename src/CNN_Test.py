@@ -13,8 +13,8 @@ best_tr_acc_avr, best_tr_state, tl, ta, vl, va = Trainning(int(input("输入迭�
                                                            optimizer,
                                                            critirion)
 
-model = model.load_state_dict(best_tr_state)  # 载入最佳训练参数模型
-
+model.load_state_dict(best_tr_state)  # 载入最佳训练参数模型
+model.eval()
 
 def Test(models, test_data, pr=True):
     models.eval()  # 选择验证模式来测试
