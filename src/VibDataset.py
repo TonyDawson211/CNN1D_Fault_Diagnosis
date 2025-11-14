@@ -57,8 +57,8 @@ class VibDataset:
         return len(self.y)
 
     def __getitem__(self, item):
-        x = torch.tensor(self.x[item], dtype=torch.float32)
-        y = torch.tensor(int(self.y[item]), dtype=torch.long)
+        x = torch.tensor(self.x[item])
+        y = torch.tensor(int(self.y[item]))
         # 数据增强
         if self.augmenter:
             x = self.augmenter(x)
