@@ -1,7 +1,7 @@
 import numpy as np
 import torch
-from torch.utils.data import TensorDataset, DataLoader
-
+from torch.utils.data import DataLoader
+from VibDataset import VibDataset
 from src.config.paths import DATA_DIR
 
 # 读取存储的学习数据
@@ -14,11 +14,14 @@ label_val = np.load(DATA_DIR / "label_val.npy")
 
 # 构建PyTorch数据加载器
 # 训练数据加载
-train_ds = TensorDataset(torch.tensor(data_train_c, dtype=torch.float32), torch.tensor(label_train, dtype=torch.long))
-train_loader = DataLoader(train_ds, batch_size=64, shuffle=True)
+train_ds = VibDataset(torch.tensor(data_train_c, dtype=torch.float32), torch.tensor(label_train, dtype=torch.long),
+                      is_augmented=True)
+train_loader = DataLoader(train_ds, batch_size=64, shuffle=True)  # type: ignore
 # 验证数据加载
-val_ds = TensorDataset(torch.tensor(data_val_c, dtype=torch.float32), torch.tensor(label_val, dtype=torch.long))
-val_loader = DataLoader(val_ds, batch_size=64, shuffle=False)
+val_ds = VibDataset(torch.tensor(data_val_c, dtype=torch.float32), torch.tensor(label_val, dtype=torch.long),
+                    is_augmented=False)
+val_loader = DataLoader(val_ds, batch_size=64, shuffle=False)  # type: ignore
 # 测试数据加载
-test_ds = TensorDataset(torch.tensor(data_test_c, dtype=torch.float32), torch.tensor(label_test, dtype=torch.long))
-test_loader = DataLoader(test_ds, batch_size=64, shuffle=False)
+test_ds = VibDataset(torch.tensor(data_test_c, dtype=torch.float32), torch.tensor(label_test, dtype=torch.long),
+                     is_augmented=False)
+test_loader = DataLoader(test_ds, batch_size=64, shuffle=False)  # type: ignore
