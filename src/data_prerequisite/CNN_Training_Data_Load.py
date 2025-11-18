@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 from torch.utils.data import DataLoader
-from VibDataset import VibDataset
+from src.enhancing_module.VibDataset import VibDataset
 from src.config.paths import DATA_DIR
 
 # 读取存储的学习数据

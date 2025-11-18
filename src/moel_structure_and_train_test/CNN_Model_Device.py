@@ -1,7 +1,7 @@
 import torch
 import numpy as np
-from SEBlock1D import SEBlock1D
 from src.config.paths import DATA_DIR
+from src.enhancing_module.CBAM import CBAM1D
 
 # 加载标签的种类数
 num_classes = int(len(np.load(DATA_DIR / "Pre_Training_Data/label_classes.npy")))
@@ -15,15 +15,15 @@ class CNN1D(torch.nn.Module):
             # ---- 第一个卷积块 ----
             torch.nn.Conv1d(1, 32, kernel_size=20, stride=5),
             torch.nn.ReLU(),
-            # SEBlock1D(32),  # SE：让 32 个通道自己分配权重
             torch.nn.MaxPool1d(kernel_size=2, stride=2),
 
             # ---- 第二个卷积块 ----
             torch.nn.Conv1d(32, 64, kernel_size=10, stride=2),
             torch.nn.ReLU(),
-            # SEBlock1D(64),  # SE：作用在 64 个通道上
             torch.nn.MaxPool1d(kernel_size=2, stride=2),
 
+            # ---- 连接CBAM ----
+            CBAM1D(in_channel=64, reduction=8, kernel_size=7),
             # ---- 全连接分类头 ----
             torch.nn.Flatten(),
             torch.nn.Linear(64 * 57, 500),
