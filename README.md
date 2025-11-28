@@ -21,13 +21,18 @@
   - Model_Data下放置了训练过程中验证准确率最高的一次迭代的参数配置
   - Pre_Training_Data下放置了训练前预处理的数据
 - src是核心代码区
-  - 此目录下直接放置了操作的核心代码
-    - Prerequisite_CNN_Cut, Prerequisite_CNN_Encoding数据预处理
+  - data_prerequisite
+    - Prerequisite_CNN_Cut, Prerequisite_CNN_Encoding 数据预处理
+    - Prerequisite_Function 数据预处理函数
     - CNN_Training_Data_load 数据转化为训练可用数据
+  - enhancing_config 强化模块配置
+    -TimeSeriesAugment 数据增强
+  - enhancing_module 强化模块
+    -VibDataset 强化数据集
+  - model_structure_and_train_test 模块搭建与训练测试
     - CNN_Model_Device 神经网络框架和设备搭建
     - CNN_Train 训练框架搭建
     - CNN_Test 测试框架搭建
-    - VibDataset 增强数据集
     - main 总运行接口
   - config 存储的运行的路径配置
   - src_jupyter 核心代码的jupyter版本，用于调试

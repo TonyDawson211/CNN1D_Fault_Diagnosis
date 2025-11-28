@@ -1,7 +1,7 @@
 import torch
-from src.moel_structure_and_train_test.CNN_Model_Device import model, device
+from src.model_structure_and_train_test.CNN_Model_Device import model, device
 from src.data_prerequisite.CNN_Training_Data_Load import train_loader, val_loader
-from src.moel_structure_and_train_test.CNN_Train import Trainning
+from src.model_structure_and_train_test.CNN_Train import Trainning
 
 # 选择优化器
 optimizer = torch.optim.Adam(
