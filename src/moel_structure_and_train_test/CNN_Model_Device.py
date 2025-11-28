@@ -1,7 +1,6 @@
 import torch
 import numpy as np
 from src.config.paths import DATA_DIR
-from src.enhancing_module.CBAM import CBAM1D
 
 # 加载标签的种类数
 num_classes = int(len(np.load(DATA_DIR / "Pre_Training_Data/label_classes.npy")))
@@ -13,7 +12,7 @@ class CNN1D(torch.nn.Module):
         super().__init__()
         self.net = torch.nn.Sequential(
             # ---- 第一个卷积块 ----
-            torch.nn.Conv1d(1, 32, kernel_size=20, stride=5),
+            torch.nn.Conv1d(2, 32, kernel_size=20, stride=5),
             torch.nn.ReLU(),
             torch.nn.MaxPool1d(kernel_size=2, stride=2),
 
@@ -22,8 +21,6 @@ class CNN1D(torch.nn.Module):
             torch.nn.ReLU(),
             torch.nn.MaxPool1d(kernel_size=2, stride=2),
 
-            # ---- 连接CBAM ----
-            CBAM1D(in_channel=64, reduction=8, kernel_size=7),
             # ---- 全连接分类头 ----
             torch.nn.Flatten(),
             torch.nn.Linear(64 * 57, 500),

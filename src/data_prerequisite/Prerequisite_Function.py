@@ -1,0 +1,76 @@
+import glob
+import numpy as np
+import os
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+import pywt
+from concurrent.futures import ProcessPoolExecutor
+
+
+def Data_Cut_Col(chosen_col: list, stride, dtype: str, root):
+    raw_data, raw_label = [], []
+
+    for cls in os.listdir(root):  # 遍历数据根目录里面的每一个目录
+
+        for file in glob.glob(os.path.join(root, cls, "*.csv")):  # 找到所有的csv文件
+            data = pd.read_csv(file, header=None, dtype=dtype)  # 读取的每一个csv文件
+            data = data.dropna(axis="columns", how="all")  # 去除空行
+            data_col = data.iloc[:, chosen_col]  # 选取特定一列
+            to_be_cut_data = data_col.to_numpy(dtype=dtype)  # 数据转换为float32
+
+            for i in range(0, len(to_be_cut_data) - stride, stride):  # 以分割步长分割
+                seg = (to_be_cut_data[i:i + stride] - np.mean(to_be_cut_data[i:i + stride])) / np.std(
+                    to_be_cut_data[i:i + stride])  # 归一化
+                raw_data.append(seg)  # 加入一组分割的数据
+                raw_label.append(cls)  # 给其贴标签
+
+    arr_data_out, arr_label_out = np.array(raw_data), np.array(raw_label)  # 将分割后的所有数据转换为array
+
+    return arr_data_out, arr_label_out
+
+
+def Encoding(data, label, test_ratio, val_ratio):
+    le = LabelEncoder()  # 创建编码器
+    label_int = le.fit_transform(label)  # 将原来的标签编序号，然后给数据贴上标签
+    classes_out = le.classes_  # 类别编号的字典映射 # 0, 1, 2 -> 'inner', 'normal', 'outer'
+
+    # 将分割后的总数据的0.2作为测试集
+    data_trv, data_test_out, label_trv, label_test_out = train_test_split(data, label_int, test_size=test_ratio,
+                                                                          random_state=42, stratify=label_int)
+    # 总数据的0.15为验证集 -> 1 - 0.2 - 0.15为训练集
+    data_train_out, data_val_out, label_train_out, label_val_out = train_test_split(data_trv, label_trv,
+                                                                                    test_size=val_ratio / (
+                                                                                            1 - test_ratio),
+                                                                                    random_state=42, stratify=label_trv)
+
+    return data_test_out, label_test_out, data_val_out, label_val_out, data_train_out, label_train_out, classes_out
+
+
+def Set_Channel_Dim(martibatch: np.ndarray, channel):
+    return martibatch.reshape(martibatch.shape[0], channel, martibatch.shape[1])
+
+
+def one_cwt(single_batch: np.ndarray, num_scales: int = 32, wavelet: str = "morl"):
+    scales = np.arange(1, num_scales + 1)
+    coeffs, _ = pywt.cwt(single_batch, scales, wavelet)
+    power = np.mean(np.abs(coeffs) ** 2, axis=0)
+    power_normalized = (power - power.mean()) / (power.std() + 1e-8)
+    return power_normalized
+
+
+def Add_Channel_Dim_With_CWT(martrix: np.ndarray):
+    pool = [martrix[i] for i in range(martrix.shape[0])]
+    cwt_signal = []
+    with ProcessPoolExecutor(max_workers=os.cpu_count()) as executor:
+        for idx, res in enumerate(executor.map(one_cwt, pool)):
+            cwt_signal.append(res)
+            if idx % 10 == 0 or idx == len(pool):
+                print(f"CWT 处理进度：{idx}/{len(pool)}")
+
+    cwt_signal = np.array(cwt_signal)
+    # cwt_signal_expanded = np.expand_dims(cwt_signal, axis=-1)
+
+    out = np.concatenate([martrix, cwt_signal], axis=-1)
+    print(martrix.shape, cwt_signal.shape)
+    return out

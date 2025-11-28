@@ -25,7 +25,7 @@
     - Prerequisite_CNN_Cut, Prerequisite_CNN_Encoding数据预处理
     - CNN_Training_Data_load 数据转化为训练可用数据
     - CNN_Model_Device 神经网络框架和设备搭建
-    - CNN_Trainning 训练框架搭建
+    - CNN_Train 训练框架搭建
     - CNN_Test 测试框架搭建
     - VibDataset 增强数据集
     - main 总运行接口
