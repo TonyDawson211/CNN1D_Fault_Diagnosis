@@ -69,7 +69,6 @@ def Add_Channel_Dim_With_CWT(martrix: np.ndarray):
                 print(f"CWT 处理进度：{idx}/{len(pool)}")
 
     cwt_signal = np.array(cwt_signal)
-    # cwt_signal_expanded = np.expand_dims(cwt_signal, axis=-1)
 
     out = np.concatenate([martrix, cwt_signal], axis=-1)
     print(martrix.shape, cwt_signal.shape)
