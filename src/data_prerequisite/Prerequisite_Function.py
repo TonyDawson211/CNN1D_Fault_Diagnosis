@@ -47,20 +47,20 @@ def Encoding(data, label, test_ratio, val_ratio):
     return data_test_out, label_test_out, data_val_out, label_val_out, data_train_out, label_train_out, classes_out
 
 
-def Set_Channel_Dim(martibatch: np.ndarray, channel):
-    return martibatch.reshape(martibatch.shape[0], channel, martibatch.shape[1])
+def Set_Channel_Dim(matrix: np.ndarray):
+    return np.moveaxis(matrix, source=-1, destination=1)
 
 
 def one_cwt(single_batch: np.ndarray, num_scales: int = 32, wavelet: str = "morl"):
     scales = np.arange(1, num_scales + 1)
     coeffs, _ = pywt.cwt(single_batch, scales, wavelet)
-    power = np.mean(np.abs(coeffs) ** 2, axis=0)
+    power = np.abs(coeffs) ** 2
     power_normalized = (power - power.mean()) / (power.std() + 1e-8)
     return power_normalized
 
 
-def Add_Channel_Dim_With_CWT(martrix: np.ndarray):
-    pool = [martrix[i] for i in range(martrix.shape[0])]
+def CWT_Scalogram_2D(matrix: np.ndarray):
+    pool = [matrix[i] for i in range(matrix.shape[0])]
     cwt_signal = []
     with ProcessPoolExecutor(max_workers=os.cpu_count()) as executor:
         for idx, res in enumerate(executor.map(one_cwt, pool)):
@@ -70,6 +70,5 @@ def Add_Channel_Dim_With_CWT(martrix: np.ndarray):
 
     cwt_signal = np.array(cwt_signal)
 
-    out = np.concatenate([martrix, cwt_signal], axis=-1)
-    print(martrix.shape, cwt_signal.shape)
-    return out
+    print(matrix.shape, cwt_signal.shape)
+    return cwt_signal
