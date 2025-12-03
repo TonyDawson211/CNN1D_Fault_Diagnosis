@@ -26,16 +26,17 @@
     - Prerequisite_Function 数据预处理函数
     - CNN_Training_Data_load 数据转化为训练可用数据
   - enhancing_config 强化模块配置
-    -TimeSeriesAugment 数据增强
+    - TimeSeriesAugment 数据增强
   - enhancing_module 强化模块
-    -FusionVibDataset 强化数据集
+    - FusionVibDataset 强化数据集
   - model_structure_and_train_test 模块搭建与训练测试
-    - CNN_Model_Device 神经网络框架和设备搭建
-    - CNN_Train 训练框架搭建
-    - CNN_Test 测试框架搭建
-    - main 总运行接口
+    - model structure 神经网络框架和设备搭建
+    - train test 数据的训练和测试
+      - CNN_Train 训练框架搭建
+      - CNN_Test 测试框架搭建
+      - 其余的为组装模块
   - config 存储的运行的路径配置
   - src_jupyter 核心代码的jupyter版本，用于调试
-
+  - main 总运行接口
 ## 开始
 - 先运行 Prerequisite_CNN_Cut和Prerequisite_CNN_Encoding作数据预处理，再运行 main 总接口
