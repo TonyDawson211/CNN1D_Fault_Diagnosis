@@ -28,7 +28,7 @@
   - enhancing_config 强化模块配置
     -TimeSeriesAugment 数据增强
   - enhancing_module 强化模块
-    -VibDataset 强化数据集
+    -FusionVibDataset 强化数据集
   - model_structure_and_train_test 模块搭建与训练测试
     - CNN_Model_Device 神经网络框架和设备搭建
     - CNN_Train 训练框架搭建
