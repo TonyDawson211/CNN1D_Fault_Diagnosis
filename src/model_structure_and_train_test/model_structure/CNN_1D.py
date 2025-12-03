@@ -3,7 +3,7 @@ import numpy as np
 from src.config.paths import DATA_DIR
 
 # 加载标签的种类数
-num_classes = int(len(np.load(DATA_DIR / "Pre_Training_Data/label_classes.npy")))
+num_classes = int(len(np.load(DATA_DIR / "Pre_Training_Data/label_classes_1D.npy")))
 
 
 # ================== CNN1D 主网络 ==================

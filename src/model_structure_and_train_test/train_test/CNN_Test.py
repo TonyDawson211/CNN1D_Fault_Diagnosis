@@ -21,7 +21,7 @@ best_tr_acc_avr, best_va_loss_avr, tl, ta, vl, va = Training(int(input("输入�
                                                              val_loader,
                                                              optimizer,
                                                              critirion)
-best_va_state = np.load(DATA_DIR / "Model_Data" / "best_va_state.pth")
+best_va_state = torch.load(DATA_DIR / "Model_Data" / "best_va_state.pth")
 model.load_state_dict(best_va_state)  # 载入最佳训练参数模型
 
 

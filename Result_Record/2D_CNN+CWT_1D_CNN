@@ -1,0 +1,183 @@
+==================================================== Trial 1 ===========================================================
+epoch 01 | train loss 0.7633 | train acc 0.6927 | val loss 0.6924 | val acc 0.7256 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.6924240749005103
+epoch 02 | train loss 0.4968 | train acc 0.8536 | val loss 0.3943 | val acc 0.8908 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.3942945046916101
+epoch 03 | train loss 0.4036 | train acc 0.8977 | val loss 0.4444 | val acc 0.8544 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.3942945046916101
+epoch 04 | train loss 0.3586 | train acc 0.9170 | val loss 0.3347 | val acc 0.9272 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.3346721483377961
+epoch 05 | train loss 0.3257 | train acc 0.9358 | val loss 0.3557 | val acc 0.9076 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.3346721483377961
+epoch 06 | train loss 0.3180 | train acc 0.9405 | val loss 0.2970 | val acc 0.9440 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.29704259428630714
+epoch 07 | train loss 0.2928 | train acc 0.9490 | val loss 0.3025 | val acc 0.9405 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.29704259428630714
+epoch 08 | train loss 0.2686 | train acc 0.9613 | val loss 0.2655 | val acc 0.9565 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.2654908928841511
+epoch 09 | train loss 0.2829 | train acc 0.9561 | val loss 0.2653 | val acc 0.9600 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.2653480483414225
+epoch 10 | train loss 0.2640 | train acc 0.9649 | val loss 0.2662 | val acc 0.9574 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.2653480483414225
+epoch 11 | train loss 0.2621 | train acc 0.9658 | val loss 0.2949 | val acc 0.9503 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.2653480483414225
+epoch 12 | train loss 0.2818 | train acc 0.9569 | val loss 0.2729 | val acc 0.9538 | pre_lr 1.00e-03 -> new_lr 5.00e-04
+called
+0.2653480483414225
+epoch 13 | train loss 0.2431 | train acc 0.9756 | val loss 0.2714 | val acc 0.9520 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.2653480483414225
+epoch 14 | train loss 0.2428 | train acc 0.9738 | val loss 0.2553 | val acc 0.9645 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.2552517221621891
+epoch 15 | train loss 0.2298 | train acc 0.9832 | val loss 0.2628 | val acc 0.9609 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.2552517221621891
+epoch 16 | train loss 0.2381 | train acc 0.9760 | val loss 0.2661 | val acc 0.9565 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.2552517221621891
+epoch 17 | train loss 0.2319 | train acc 0.9807 | val loss 0.2567 | val acc 0.9636 | pre_lr 5.00e-04 -> new_lr 2.50e-04
+called
+0.2552517221621891
+epoch 18 | train loss 0.2231 | train acc 0.9842 | val loss 0.2480 | val acc 0.9654 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.24801232614165725
+epoch 19 | train loss 0.2257 | train acc 0.9815 | val loss 0.2487 | val acc 0.9636 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.24801232614165725
+epoch 20 | train loss 0.2214 | train acc 0.9852 | val loss 0.2484 | val acc 0.9671 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.24801232614165725
+epoch 21 | train loss 0.2245 | train acc 0.9830 | val loss 0.2457 | val acc 0.9654 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.24573730683983114
+epoch 22 | train loss 0.2210 | train acc 0.9852 | val loss 0.2442 | val acc 0.9680 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.24416417238132146
+epoch 23 | train loss 0.2187 | train acc 0.9850 | val loss 0.2535 | val acc 0.9671 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.24416417238132146
+epoch 24 | train loss 0.2178 | train acc 0.9859 | val loss 0.2476 | val acc 0.9671 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.24416417238132146
+epoch 25 | train loss 0.2201 | train acc 0.9848 | val loss 0.2461 | val acc 0.9671 | pre_lr 2.50e-04 -> new_lr 1.25e-04
+called
+0.24416417238132146
+epoch 26 | train loss 0.2142 | train acc 0.9871 | val loss 0.2422 | val acc 0.9707 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.2421836937723109
+epoch 27 | train loss 0.2158 | train acc 0.9881 | val loss 0.2431 | val acc 0.9671 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.2421836937723109
+epoch 28 | train loss 0.2152 | train acc 0.9873 | val loss 0.2410 | val acc 0.9689 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.24097588954768004
+epoch 29 | train loss 0.2122 | train acc 0.9879 | val loss 0.2417 | val acc 0.9671 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.24097588954768004
+epoch 30 | train loss 0.2143 | train acc 0.9877 | val loss 0.2452 | val acc 0.9680 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.24097588954768004
+
+==================================================== Trial 2 ===========================================================
+epoch 01 | train loss 0.7690 | train acc 0.6636 | val loss 0.6343 | val acc 0.7123 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.6343142920658389
+epoch 02 | train loss 0.4529 | train acc 0.8762 | val loss 0.3509 | val acc 0.9165 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.3508914867366398
+epoch 03 | train loss 0.3564 | train acc 0.9233 | val loss 0.3410 | val acc 0.9263 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.3410086064842624
+epoch 04 | train loss 0.3313 | train acc 0.9336 | val loss 0.3466 | val acc 0.9121 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.3410086064842624
+epoch 05 | train loss 0.3072 | train acc 0.9465 | val loss 0.3430 | val acc 0.9183 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.3410086064842624
+epoch 06 | train loss 0.3027 | train acc 0.9471 | val loss 0.2861 | val acc 0.9494 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.28610588533416736
+epoch 07 | train loss 0.2873 | train acc 0.9531 | val loss 0.2804 | val acc 0.9485 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.2803710055922954
+epoch 08 | train loss 0.2720 | train acc 0.9596 | val loss 0.3057 | val acc 0.9396 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.2803710055922954
+epoch 09 | train loss 0.2705 | train acc 0.9627 | val loss 0.2699 | val acc 0.9547 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.2698535222566784
+epoch 10 | train loss 0.2665 | train acc 0.9670 | val loss 0.3011 | val acc 0.9423 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.2698535222566784
+epoch 11 | train loss 0.2596 | train acc 0.9666 | val loss 0.2716 | val acc 0.9583 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.2698535222566784
+epoch 12 | train loss 0.2696 | train acc 0.9629 | val loss 0.2633 | val acc 0.9574 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.26333953411075195
+epoch 13 | train loss 0.2545 | train acc 0.9680 | val loss 0.2653 | val acc 0.9591 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.26333953411075195
+epoch 14 | train loss 0.2588 | train acc 0.9664 | val loss 0.2541 | val acc 0.9583 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.2541172907788631
+epoch 15 | train loss 0.2441 | train acc 0.9748 | val loss 0.2674 | val acc 0.9636 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.2541172907788631
+epoch 16 | train loss 0.2526 | train acc 0.9715 | val loss 0.2582 | val acc 0.9618 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.2541172907788631
+epoch 17 | train loss 0.2467 | train acc 0.9752 | val loss 0.2927 | val acc 0.9449 | pre_lr 1.00e-03 -> new_lr 5.00e-04
+called
+0.2541172907788631
+epoch 18 | train loss 0.2328 | train acc 0.9799 | val loss 0.2540 | val acc 0.9680 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.25403346483914935
+epoch 19 | train loss 0.2257 | train acc 0.9828 | val loss 0.2473 | val acc 0.9689 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.24732215784582745
+epoch 20 | train loss 0.2290 | train acc 0.9807 | val loss 0.2515 | val acc 0.9698 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.24732215784582745
+epoch 21 | train loss 0.2281 | train acc 0.9797 | val loss 0.2381 | val acc 0.9725 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.23808379738623042
+epoch 22 | train loss 0.2212 | train acc 0.9852 | val loss 0.2487 | val acc 0.9671 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.23808379738623042
+epoch 23 | train loss 0.2280 | train acc 0.9824 | val loss 0.2445 | val acc 0.9654 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.23808379738623042
+epoch 24 | train loss 0.2197 | train acc 0.9863 | val loss 0.2381 | val acc 0.9769 | pre_lr 5.00e-04 -> new_lr 2.50e-04
+called
+0.23808379738623042
+epoch 25 | train loss 0.2179 | train acc 0.9852 | val loss 0.2482 | val acc 0.9609 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.23808379738623042
+epoch 26 | train loss 0.2145 | train acc 0.9873 | val loss 0.2394 | val acc 0.9716 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.23808379738623042
+epoch 27 | train loss 0.2147 | train acc 0.9867 | val loss 0.2389 | val acc 0.9760 | pre_lr 2.50e-04 -> new_lr 1.25e-04
+called
+0.23808379738623042
+epoch 28 | train loss 0.2114 | train acc 0.9881 | val loss 0.2348 | val acc 0.9760 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.23480722726344216
+epoch 29 | train loss 0.2152 | train acc 0.9881 | val loss 0.2354 | val acc 0.9769 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.23480722726344216
+epoch 30 | train loss 0.2094 | train acc 0.9900 | val loss 0.2350 | val acc 0.9760 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.23480722726344216
