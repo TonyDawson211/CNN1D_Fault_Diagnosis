@@ -1,0 +1,251 @@
+E:\Anaconda\envs\Fault_Diagnosis\python.exe "E:\python\Fault Diagnosis\src\main.py"
+输入卷积模式(fusion/1D/2D)：2D
+输入迭代次数：	30
+epoch 01 | train loss 0.7586 | train acc 0.6702 | val loss 0.5891 | val acc 0.8242 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.5891389377798958
+epoch 02 | train loss 0.5530 | train acc 0.8161 | val loss 0.5514 | val acc 0.8224 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.5513807360486493
+epoch 03 | train loss 0.5059 | train acc 0.8321 | val loss 0.4633 | val acc 0.8570 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.4632717900335471
+epoch 04 | train loss 0.4492 | train acc 0.8674 | val loss 0.4842 | val acc 0.8535 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.4632717900335471
+epoch 05 | train loss 0.4098 | train acc 0.8883 | val loss 0.4452 | val acc 0.8668 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.4451553857559421
+epoch 06 | train loss 0.3885 | train acc 0.9043 | val loss 0.4489 | val acc 0.8721 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.4451553857559421
+epoch 07 | train loss 0.3767 | train acc 0.9063 | val loss 0.4157 | val acc 0.8908 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.41571547707698275
+epoch 08 | train loss 0.3546 | train acc 0.9178 | val loss 0.3926 | val acc 0.8917 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.3925744958923299
+epoch 09 | train loss 0.3602 | train acc 0.9180 | val loss 0.3981 | val acc 0.8943 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.3925744958923299
+epoch 10 | train loss 0.3298 | train acc 0.9305 | val loss 0.4151 | val acc 0.8908 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.3925744958923299
+epoch 11 | train loss 0.3188 | train acc 0.9367 | val loss 0.3963 | val acc 0.9023 | pre_lr 1.00e-03 -> new_lr 5.00e-04
+called
+0.3925744958923299
+epoch 12 | train loss 0.2883 | train acc 0.9508 | val loss 0.3574 | val acc 0.9147 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.3574030969960228
+epoch 13 | train loss 0.2764 | train acc 0.9557 | val loss 0.3583 | val acc 0.9147 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.3574030969960228
+epoch 14 | train loss 0.2727 | train acc 0.9596 | val loss 0.3498 | val acc 0.9210 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.3498040108443577
+epoch 15 | train loss 0.2592 | train acc 0.9674 | val loss 0.3637 | val acc 0.9094 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.3498040108443577
+epoch 16 | train loss 0.2617 | train acc 0.9635 | val loss 0.3507 | val acc 0.9147 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.3498040108443577
+epoch 17 | train loss 0.2500 | train acc 0.9692 | val loss 0.3595 | val acc 0.9201 | pre_lr 5.00e-04 -> new_lr 2.50e-04
+called
+0.3498040108443577
+epoch 18 | train loss 0.2366 | train acc 0.9768 | val loss 0.3464 | val acc 0.9245 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.3464285423764115
+epoch 19 | train loss 0.2293 | train acc 0.9811 | val loss 0.3484 | val acc 0.9245 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.3464285423764115
+epoch 20 | train loss 0.2259 | train acc 0.9822 | val loss 0.3439 | val acc 0.9236 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.3439312853038205
+epoch 21 | train loss 0.2275 | train acc 0.9820 | val loss 0.3386 | val acc 0.9316 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.3386116487835906
+epoch 22 | train loss 0.2193 | train acc 0.9891 | val loss 0.3427 | val acc 0.9334 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.3386116487835906
+epoch 23 | train loss 0.2170 | train acc 0.9877 | val loss 0.3537 | val acc 0.9298 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.3386116487835906
+epoch 24 | train loss 0.2144 | train acc 0.9889 | val loss 0.3482 | val acc 0.9307 | pre_lr 2.50e-04 -> new_lr 1.25e-04
+called
+0.3386116487835906
+epoch 25 | train loss 0.2078 | train acc 0.9918 | val loss 0.3477 | val acc 0.9316 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.3386116487835906
+epoch 26 | train loss 0.2054 | train acc 0.9943 | val loss 0.3497 | val acc 0.9307 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.3386116487835906
+epoch 27 | train loss 0.2032 | train acc 0.9953 | val loss 0.3494 | val acc 0.9307 | pre_lr 1.25e-04 -> new_lr 6.25e-05
+called
+0.3386116487835906
+epoch 28 | train loss 0.1994 | train acc 0.9969 | val loss 0.3475 | val acc 0.9298 | pre_lr 6.25e-05 -> new_lr 6.25e-05
+called
+0.3386116487835906
+epoch 29 | train loss 0.1999 | train acc 0.9967 | val loss 0.3478 | val acc 0.9272 | pre_lr 6.25e-05 -> new_lr 6.25e-05
+called
+0.3386116487835906
+epoch 30 | train loss 0.2001 | train acc 0.9969 | val loss 0.3477 | val acc 0.9290 | pre_lr 6.25e-05 -> new_lr 3.13e-05
+called
+0.3386116487835906
+ea 0.9314247669773635 | b_ta 0.933392539964476 | b_vl 0.3386116487835906
+
+E:\Anaconda\envs\Fault_Diagnosis\python.exe "E:\python\Fault Diagnosis\src\main.py"
+输入卷积模式(fusion/1D/2D)：2D
+输入迭代次数：50
+epoch 01 | train loss 0.7897 | train acc 0.6550 | val loss 0.6951 | val acc 0.7158 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.6950886078033311
+epoch 02 | train loss 0.5781 | train acc 0.7913 | val loss 0.5164 | val acc 0.8304 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.516433808350436
+epoch 03 | train loss 0.5113 | train acc 0.8282 | val loss 0.4796 | val acc 0.8481 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.4795791636987012
+epoch 04 | train loss 0.4671 | train acc 0.8588 | val loss 0.4514 | val acc 0.8570 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.4513627543224958
+epoch 05 | train loss 0.4406 | train acc 0.8737 | val loss 0.4439 | val acc 0.8712 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.4438764982282798
+epoch 06 | train loss 0.4118 | train acc 0.8901 | val loss 0.4210 | val acc 0.8854 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.42096209250800776
+epoch 07 | train loss 0.3843 | train acc 0.9032 | val loss 0.4105 | val acc 0.8828 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.4104545013730945
+epoch 08 | train loss 0.3682 | train acc 0.9088 | val loss 0.4278 | val acc 0.8774 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.4104545013730945
+epoch 09 | train loss 0.3533 | train acc 0.9159 | val loss 0.3958 | val acc 0.8952 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.39576990788613925
+epoch 10 | train loss 0.3413 | train acc 0.9237 | val loss 0.4454 | val acc 0.8721 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.39576990788613925
+epoch 11 | train loss 0.3319 | train acc 0.9311 | val loss 0.4092 | val acc 0.9050 | pre_lr 1.00e-03 -> new_lr 1.00e-03
+called
+0.39576990788613925
+epoch 12 | train loss 0.3200 | train acc 0.9385 | val loss 0.4085 | val acc 0.8961 | pre_lr 1.00e-03 -> new_lr 5.00e-04
+called
+0.39576990788613925
+epoch 13 | train loss 0.2934 | train acc 0.9479 | val loss 0.3648 | val acc 0.9112 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.3648459660435231
+epoch 14 | train loss 0.2810 | train acc 0.9545 | val loss 0.3587 | val acc 0.9147 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.35866070217179996
+epoch 15 | train loss 0.2739 | train acc 0.9594 | val loss 0.3499 | val acc 0.9183 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.34985434405545357
+epoch 16 | train loss 0.2661 | train acc 0.9647 | val loss 0.3694 | val acc 0.9085 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.34985434405545357
+epoch 17 | train loss 0.2638 | train acc 0.9662 | val loss 0.3698 | val acc 0.9103 | pre_lr 5.00e-04 -> new_lr 5.00e-04
+called
+0.34985434405545357
+epoch 18 | train loss 0.2603 | train acc 0.9651 | val loss 0.3514 | val acc 0.9254 | pre_lr 5.00e-04 -> new_lr 2.50e-04
+called
+0.34985434405545357
+epoch 19 | train loss 0.2419 | train acc 0.9774 | val loss 0.3484 | val acc 0.9174 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.3484036807056854
+epoch 20 | train loss 0.2363 | train acc 0.9791 | val loss 0.3448 | val acc 0.9245 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.3447702606977832
+epoch 21 | train loss 0.2383 | train acc 0.9764 | val loss 0.3481 | val acc 0.9254 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.3447702606977832
+epoch 22 | train loss 0.2313 | train acc 0.9813 | val loss 0.3460 | val acc 0.9298 | pre_lr 2.50e-04 -> new_lr 2.50e-04
+called
+0.3447702606977832
+epoch 23 | train loss 0.2274 | train acc 0.9826 | val loss 0.3504 | val acc 0.9236 | pre_lr 2.50e-04 -> new_lr 1.25e-04
+called
+0.3447702606977832
+epoch 24 | train loss 0.2196 | train acc 0.9885 | val loss 0.3426 | val acc 0.9263 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.34262346924939335
+epoch 25 | train loss 0.2209 | train acc 0.9873 | val loss 0.3495 | val acc 0.9254 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.34262346924939335
+epoch 26 | train loss 0.2143 | train acc 0.9891 | val loss 0.3419 | val acc 0.9298 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.34192178600846557
+epoch 27 | train loss 0.2153 | train acc 0.9904 | val loss 0.3485 | val acc 0.9316 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.34192178600846557
+epoch 28 | train loss 0.2149 | train acc 0.9902 | val loss 0.3393 | val acc 0.9290 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.33930825366643563
+epoch 29 | train loss 0.2130 | train acc 0.9930 | val loss 0.3406 | val acc 0.9298 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.33930825366643563
+epoch 30 | train loss 0.2123 | train acc 0.9918 | val loss 0.3422 | val acc 0.9325 | pre_lr 1.25e-04 -> new_lr 1.25e-04
+called
+0.33930825366643563
+epoch 31 | train loss 0.2113 | train acc 0.9932 | val loss 0.3524 | val acc 0.9227 | pre_lr 1.25e-04 -> new_lr 6.25e-05
+called
+0.33930825366643563
+epoch 32 | train loss 0.2082 | train acc 0.9932 | val loss 0.3413 | val acc 0.9325 | pre_lr 6.25e-05 -> new_lr 6.25e-05
+called
+0.33930825366643563
+epoch 33 | train loss 0.2065 | train acc 0.9938 | val loss 0.3383 | val acc 0.9352 | pre_lr 6.25e-05 -> new_lr 6.25e-05
+called
+0.3382627771866258
+epoch 34 | train loss 0.2059 | train acc 0.9951 | val loss 0.3403 | val acc 0.9334 | pre_lr 6.25e-05 -> new_lr 6.25e-05
+called
+0.3382627771866258
+epoch 35 | train loss 0.2056 | train acc 0.9947 | val loss 0.3410 | val acc 0.9343 | pre_lr 6.25e-05 -> new_lr 6.25e-05
+called
+0.3382627771866258
+epoch 36 | train loss 0.2046 | train acc 0.9953 | val loss 0.3399 | val acc 0.9352 | pre_lr 6.25e-05 -> new_lr 3.13e-05
+called
+0.3382627771866258
+epoch 37 | train loss 0.2026 | train acc 0.9963 | val loss 0.3394 | val acc 0.9361 | pre_lr 3.13e-05 -> new_lr 3.13e-05
+called
+0.3382627771866258
+epoch 38 | train loss 0.2021 | train acc 0.9967 | val loss 0.3393 | val acc 0.9352 | pre_lr 3.13e-05 -> new_lr 3.13e-05
+called
+0.3382627771866258
+epoch 39 | train loss 0.2029 | train acc 0.9961 | val loss 0.3398 | val acc 0.9369 | pre_lr 3.13e-05 -> new_lr 1.56e-05
+called
+0.3382627771866258
+epoch 40 | train loss 0.2020 | train acc 0.9971 | val loss 0.3413 | val acc 0.9334 | pre_lr 1.56e-05 -> new_lr 1.56e-05
+called
+0.3382627771866258
+epoch 41 | train loss 0.2008 | train acc 0.9971 | val loss 0.3405 | val acc 0.9352 | pre_lr 1.56e-05 -> new_lr 1.56e-05
+called
+0.3382627771866258
+epoch 42 | train loss 0.2015 | train acc 0.9969 | val loss 0.3416 | val acc 0.9343 | pre_lr 1.56e-05 -> new_lr 7.81e-06
+called
+0.3382627771866258
+epoch 43 | train loss 0.2005 | train acc 0.9971 | val loss 0.3409 | val acc 0.9334 | pre_lr 7.81e-06 -> new_lr 7.81e-06
+called
+0.3382627771866258
+epoch 44 | train loss 0.1998 | train acc 0.9979 | val loss 0.3401 | val acc 0.9343 | pre_lr 7.81e-06 -> new_lr 7.81e-06
+called
+0.3382627771866258
+epoch 45 | train loss 0.2007 | train acc 0.9971 | val loss 0.3400 | val acc 0.9343 | pre_lr 7.81e-06 -> new_lr 3.91e-06
+called
+0.3382627771866258
+epoch 46 | train loss 0.2004 | train acc 0.9975 | val loss 0.3404 | val acc 0.9334 | pre_lr 3.91e-06 -> new_lr 3.91e-06
+called
+0.3382627771866258
+epoch 47 | train loss 0.1996 | train acc 0.9973 | val loss 0.3403 | val acc 0.9343 | pre_lr 3.91e-06 -> new_lr 3.91e-06
+called
+0.3382627771866258
+epoch 48 | train loss 0.2000 | train acc 0.9971 | val loss 0.3399 | val acc 0.9352 | pre_lr 3.91e-06 -> new_lr 1.95e-06
+called
+0.3382627771866258
+epoch 49 | train loss 0.2009 | train acc 0.9971 | val loss 0.3401 | val acc 0.9334 | pre_lr 1.95e-06 -> new_lr 1.95e-06
+called
+0.3382627771866258
+epoch 50 | train loss 0.1992 | train acc 0.9975 | val loss 0.3403 | val acc 0.9334 | pre_lr 1.95e-06 -> new_lr 1.95e-06
+called
+0.3382627771866258
+ea 0.933422103861518 | b_ta 0.9369449378330373 | b_vl 0.3382627771866258
+
+

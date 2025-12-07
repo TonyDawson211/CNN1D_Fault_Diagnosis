@@ -1,4 +1,3 @@
-import numpy as np
 import torch
 from src.config.paths import DATA_DIR
 from src.model_structure_and_train_test.model_structure.CNN_Fusion import model, device
@@ -11,7 +10,7 @@ optimizer = torch.optim.Adam(
 )
 
 # 选择损失类型
-critirion = torch.nn.CrossEntropyLoss(
+criterion = torch.nn.CrossEntropyLoss(
     label_smoothing=0.05  # 标签平滑，强制降低5%的正确率，降低过度自信
 )
 
@@ -20,7 +19,7 @@ best_tr_acc_avr, best_va_loss_avr, tl, ta, vl, va = Training(int(input("输入�
                                                              device, model, train_loader,
                                                              val_loader,
                                                              optimizer,
-                                                             critirion)
+                                                             criterion)
 best_va_state = torch.load(DATA_DIR / "Model_Data" / "best_va_state.pth")
 model.load_state_dict(best_va_state)  # 载入最佳训练参数模型
 
