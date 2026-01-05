@@ -1,6 +1,6 @@
 # CNN Bearing Fault Diagnosis
 
-## 一维 CNN 复现滚动轴承故障诊断（基于原论文思路 + 自制数据处理流程）
+## CNN滚动轴承故障诊断
 
 ## Attribution
 - 基于：Rolling Element Bearings Fault Intelligent Diagnosis Based on Convolutional Neural Networks Using Raw Sensing Signal
