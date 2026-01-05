@@ -24,6 +24,6 @@ class FusionVibDataset:
         y = torch.tensor(int(self.y[item]))
         # 数据增强
         if self.augmenter:
-            x_1d = self.augmenter(x_1d)
+            x_1d, x_2d = self.augmenter(x_1d, x_2d)
 
         return x_1d, x_2d, y

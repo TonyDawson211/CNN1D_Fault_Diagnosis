@@ -1,6 +1,8 @@
 import torch
 import random
 
+random.seed(1145)
+
 
 class TimeSeriesAugment:
     """
@@ -18,13 +20,14 @@ class TimeSeriesAugment:
         self.scale_range = scale_range
         self.mask_ratio = mask_ratio
 
-    def __call__(self, x: torch.Tensor):
+    def __call__(self, x: torch.Tensor, y):
         length = x.size(-1)
         # 随机时移
         if random.random() < 0.5:
             max_shift = int(length * self.shift_ratio)
             shift = random.randint(-max_shift, max_shift)
             x = torch.roll(x, shifts=shift, dims=-1)
+            y = torch.roll(y, shifts=shift, dims=-1)
         # 轻噪声
         if random.random() < 0.5:
             std = x.std() + 1e-8
@@ -38,5 +41,6 @@ class TimeSeriesAugment:
             mask_len = max(1, int(self.mask_ratio * length))
             start = random.randint(0, length - mask_len)
             x[:, start:start + mask_len] = 0
+            y[:, start:start + mask_len] = 0
 
-        return x
+        return x, y

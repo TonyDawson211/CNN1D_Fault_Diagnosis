@@ -30,16 +30,16 @@ train_ds = FusionVibDataset(torch.tensor(data_train_c_1D, dtype=torch.float32),
                             torch.tensor(label_train_2D, dtype=torch.long),
                             is_augmented=True)
 
-train_loader = DataLoader(train_ds, batch_size=64, shuffle=True)  # type: ignore
+train_loader = DataLoader(train_ds, batch_size=128, shuffle=True)  # type: ignore
 # 验证数据加载
 val_ds = FusionVibDataset(torch.tensor(data_val_c_1D, dtype=torch.float32),
                           torch.tensor(data_val_c_2D, dtype=torch.float32),
                           torch.tensor(label_val_2D, dtype=torch.long),
                           is_augmented=False)
-val_loader = DataLoader(val_ds, batch_size=64, shuffle=False)  # type: ignore
+val_loader = DataLoader(val_ds, batch_size=128, shuffle=False)  # type: ignore
 # 测试数据加载
 test_ds = FusionVibDataset(torch.tensor(data_test_c_1D, dtype=torch.float32),
                            torch.tensor(data_test_c_2D, dtype=torch.float32),
                            torch.tensor(label_test_2D, dtype=torch.long),
                            is_augmented=False)
-test_loader = DataLoader(test_ds, batch_size=64, shuffle=False)  # type: ignore
+test_loader = DataLoader(test_ds, batch_size=128, shuffle=False)  # type: ignore

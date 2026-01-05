@@ -6,9 +6,9 @@ from src.model_structure_and_train_test.train_test.CNN_Train_train_model import 
 from src.model_structure_and_train_test.train_test.CNN_Train_val_model import val_model
 
 
-def Training(rounds: int, devices, models, train_data, val_data, optimizers, criterions):
+def Train(rounds: int, devices, models, train_data, val_data, optimizers, criterions):
     epoches = rounds  # 定义训练次数
-    scheduler = ReduceLROnPlateau(optimizers, mode="min", factor=0.5, patience=2, min_lr=1e-6)  # 设置学习率调度器
+    scheduler = ReduceLROnPlateau(optimizers, mode="min", factor=0.5, patience=3, min_lr=1e-6)  # 设置学习率调度器
 
     best_va_acc_avr, best_va_loss_avr, best_epoch = 0.0, np.inf, 0  # 设置最佳的验证准确率，最佳验证损失，初始化为0.0
 
@@ -56,6 +56,8 @@ def Training(rounds: int, devices, models, train_data, val_data, optimizers, cri
     tr_acc_avr_arr = np.array(tr_acc_avr_list)
     va_loss_avr_arr = np.array(va_loss_avr_list)
     va_acc_avr_arr = np.array(va_acc_avr_list)
+
+    print(f"b_ta {best_va_acc_avr} | b_vl {best_va_loss_avr}")
 
     return (best_va_acc_avr, best_va_loss_avr,
             tr_loss_avr_arr, tr_acc_avr_arr, va_loss_avr_arr, va_acc_avr_arr)

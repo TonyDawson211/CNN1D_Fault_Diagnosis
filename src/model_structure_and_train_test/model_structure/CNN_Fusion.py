@@ -20,31 +20,39 @@ class FusionNet(torch.nn.Module):
         super().__init__()
         assert mode in ["fusion", "1D", "2D"]
         self.mode = mode
-        self.branch_1d = CNN1D()
-        self.branch_2d = CNN2D()
+
+        if mode == "fusion":
+            self.branch_1d = CNN1D()
+            self.branch_2d = CNN2D()
+            self.input_dim = 256 * 2
+        elif mode == "1D":
+            self.branch_1d = CNN1D()
+            self.input_dim = 256
+        elif mode == "2D":
+            self.branch_2d = CNN2D()
+            self.input_dim = 256
+
         self.classifier = torch.nn.Sequential(
-            torch.nn.Linear(256 + 256, 256),
+            torch.nn.Linear(self.input_dim, 256),
             torch.nn.ReLU(),
             torch.nn.Dropout(p=0.5),
             torch.nn.Linear(256, num_classes)
         )
 
     def forward(self, x_1d, x_2d):
-        fusion_1d, fusion_2d = None, None
+        fusion_1d, fusion_2d, fusion = None, None, None
 
         if self.mode == "fusion":
             fusion_1d = self.branch_1d(x_1d)
             fusion_2d = self.branch_2d(x_2d)
+            fusion = torch.cat((fusion_1d, fusion_2d), dim=1)  # type: ignore
 
         elif self.mode == "1D":
-            fusion_1d = self.branch_1d(x_1d)
-            fusion_2d = torch.zeros_like(fusion_1d)
+            fusion = self.branch_1d(x_1d)
 
         elif self.mode == "2D":
-            fusion_2d = self.branch_2d(x_2d)
-            fusion_1d = torch.zeros_like(fusion_2d)
+            fusion = self.branch_2d(x_2d)
 
-        fusion = torch.cat((fusion_1d, fusion_2d), dim=1)  # type: ignore
         out = self.classifier(fusion)
 
         return out

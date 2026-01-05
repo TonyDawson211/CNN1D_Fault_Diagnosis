@@ -5,7 +5,6 @@ def Early_Stop(ep, models, epoch_no_improve, epoch_patience, va_loss_avr, data_d
     # 设置最佳的验证损失率和最佳参数设定，初始化为0
     # 设置验证损失率未提升的轮次，忍耐轮次，初始化为0
     # 早停机制
-    print("called")
     if va_loss_avr < best_va_loss_avr - 1e-5:
         best_va_loss_avr, best_epoch = va_loss_avr, ep  # 记录最佳损失率
         best_va_state = {k: v.cpu().clone() for k, v in models.state_dict().items()}
